@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"baseUrl": ".",
+		"target": "es2017",
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"declaration": true,
+		"module": "commonjs",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"paths": {
+			"*": ["src/*"]
+		}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist", "examples", "docs"]
+}

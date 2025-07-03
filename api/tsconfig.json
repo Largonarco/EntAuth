@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"target": "es2017",
+		"module": "commonjs",
+		"lib": ["es2017", "esnext.asynciterable"],
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"strict": true,
+		"strictPropertyInitialization": false,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"baseUrl": "./src",
+		"paths": {
+			"app/*": ["app/*"]
+		}
+	},
+	"ts-node": {
+		"require": ["tsconfig-paths/register"]
+	},
+	"include": ["src/**/*"],
+	"typeRoots": ["./node_modules/@types", "./src/app/types"],
+	"exclude": ["node_modules", "dist"]
+}

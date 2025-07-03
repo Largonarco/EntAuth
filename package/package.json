@@ -1,0 +1,40 @@
+{
+	"license": "ISC",
+	"version": "1.0.11",
+	"author": "Omkar N",
+	"name": "@embos/auth",
+	"main": "dist/index.js",
+	"description": "Enterprise Authentication and Authorization Package (WorkOS)",
+	"bin": {
+		"auth-cli": "./dist/cli.js"
+	},
+	"directories": {
+		"example": "examples"
+	},
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsc",
+		"cli": "node dist/cli.js",
+		"postinstall": "[ \"$NODE_ENV\" != \"production\" ] && chmod +x ./dist/cli.js || true"
+	},
+	"dependencies": {
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0",
+		"mongodb": "^6.16.0",
+		"mongoose": "^8.15.1",
+		"commander": "^14.0.0",
+		"jsonwebtoken": "^9.0.2",
+		"@workos-inc/node": "^7.53.0"
+	},
+	"devDependencies": {
+		"typescript": "^5.8.3",
+		"@types/express": "^5.0.2",
+		"@types/commander": "^2.12.5",
+		"@types/jsonwebtoken": "^9.0.9"
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
