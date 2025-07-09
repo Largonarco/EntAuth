@@ -1,6 +1,6 @@
 {
 	"license": "ISC",
-	"version": "1.0.11",
+	"version": "1.0.1",
 	"author": "Omkar N",
 	"name": "@embos/auth",
 	"main": "dist/index.js",
